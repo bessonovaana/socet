@@ -1,8 +1,8 @@
-import socet
+import socket
 
-client_socet=socet.socet(socet.AF_INET, socet.SOCK_STREAM)
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-client_socet.connect(('localhost',12345))
+client_socket.connect(('localhost', 8080))
 
 client_socket.sendall(b'Hello, server!')
 
